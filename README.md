@@ -28,4 +28,4 @@ mongo -u appUser -p passwordForAppUser admin
 { "_id" : ObjectId("5cc84e276e9abf31a65a5f1f"), "num" : 1 }
 ```
 # Overview
-![Objective - what success looks like](/img/overview.png)
+![Objective - what success looks like](/img/hpecfmaudits.png)
