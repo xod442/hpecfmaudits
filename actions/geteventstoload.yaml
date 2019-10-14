@@ -1,0 +1,6 @@
+---
+name: geteventstoload
+description: A workflow for getting hpecfm events into a mongo database.
+runner_type: orquesta
+entry_point: workflows/geteventstoload.yaml
+enabled: true

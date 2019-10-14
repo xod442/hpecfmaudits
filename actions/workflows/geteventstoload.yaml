@@ -1,0 +1,15 @@
+version: 1.0
+
+description: A workflow to copy hpecfm events into a mongo database.
+
+tasks:
+  getswitches:
+    action: hpecfm.get_events
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - events: <% result().result %>
+        do: sendmongo
+
+  sendmongo:
+    action: hpecfmaudits.loaddbevents events=<% ctx().events %>

@@ -1,0 +1,6 @@
+---
+name: getalarmstoload
+description: A workflow for getting hpecfm alarms into a mongo database.
+runner_type: orquesta
+entry_point: workflows/getalarmstoload.yaml
+enabled: true

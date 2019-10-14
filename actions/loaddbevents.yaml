@@ -1,0 +1,11 @@
+---
+name: loaddbevents
+pack: hpecfmaudits
+description: build mongo db of real time alarms on the cfm
+runner_type: python-script
+entry_point: loaddbevents.py
+enabled: true
+parameters:
+  events:
+    required: true
+    type: array

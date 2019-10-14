@@ -1,0 +1,14 @@
+---
+ref: hpecfmaudits
+name: hpecfmaudits
+description: Builds mongo database of HPE composable Fabric alarms
+keywords:
+  - HPECFM
+  - composable
+  - mongo
+version: 0.1.2
+python_versions:
+  - "2"
+  - "3"
+author: Rick Kauffman
+email: chewie@wookieware.composable
