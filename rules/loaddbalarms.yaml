@@ -10,4 +10,4 @@ trigger:
     unit: minutes
 
 action:
-  ref: "hpecfmaudits.loaddbalarms"
+  ref: "hpecfmaudits.getalarmstoload"

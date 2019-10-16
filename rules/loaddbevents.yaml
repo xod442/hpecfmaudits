@@ -10,4 +10,4 @@ trigger:
     unit: minutes
 
 action:
-  ref: "hpecfmaudits.loaddbevents"
+  ref: "hpecfmaudits.geteventstoload"
