@@ -32,12 +32,12 @@ class loadDb(HpecfmAlarmsBaseAction):
         process = mydb["processevents"]
 
 
-        for alarm in alarms:
-            myquery = { "u_uuid" : alarm['u_uuid'] }
+        for event in events:
+            myquery = { "u_uuid" : event['u_uuid'] }
             records = known.find(myquery).count()
             if records == 0:
-                write_record = known.insert_one(alarm)
-                write_record = process.insert_one(alarm)
+                write_record = known.insert_one(event)
+                write_record = process.insert_one(event)
         return (records)
 
 
