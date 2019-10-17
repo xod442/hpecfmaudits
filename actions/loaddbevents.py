@@ -29,7 +29,7 @@ class loadDb(HpecfmAlarmsBaseAction):
 
         mydb = self.client["app_db"]
         known = mydb["knownevents"]
-        process = mydb["processevents"]
+        # process = mydb["processevents"]
 
 
         for event in events:
@@ -37,7 +37,7 @@ class loadDb(HpecfmAlarmsBaseAction):
             records = known.find(myquery).count()
             if records == 0:
                 write_record = known.insert_one(event)
-                write_record = process.insert_one(event)
+                # write_record = process.insert_one(event)
         return (records)
 
 
